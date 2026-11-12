@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página inicial</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Pratica da SAEP</h1><br><br>
+
+    <div class="formulario">
+        <input type="text" id="produto" placeholder="Nome do Produto">
+        <input type="number" id="estoque_atual" placeholder="Quantidade">
+        <input type="text" id="preco" placeholder="Preço (ex: R$ 50,00)">
+        <button onclick="adicionarLinha()">Adicionar</button>
+        <button onclick="Delete()">Delete</button>
+    </div>
+
+    <p>confira abaixo os produtos disponiveis:</p><br>
+    <table id="table">
+        <thead>
+            <tr>
+                <th>Produto</th>
+                <th>Quantidade</th>
+                <th>Preço Unitário</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    
+    
+</body>
+<script src="script.js"></script>
+</html>
